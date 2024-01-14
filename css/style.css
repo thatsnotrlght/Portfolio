@@ -1,0 +1,329 @@
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+section {
+    display: block;
+}
+
+.container {
+    width:100%;
+    height: 100vh;
+    /*padding-left:8%;
+    padding-right:8%;
+    /*background-image: url(../images/glowing-spaceship-orbits-planet-starry-galaxy-generated-by-ai_188544-9655.avif);*/
+    background-position: center;
+    background-size: cover;
+    margin-left:auto;
+    margin-right:auto;
+}    
+.navbar {
+    padding:1rem 2rem!important;
+    height:12%;
+    display:flex;
+    align-items: center;
+    /*background-color:#A3C4BC;*/
+    box-shadow: 0 10px 10px 0 rgba(9,5,29,.171)!important;
+}    
+
+.navigation-name {
+    font-size: 3rem;
+    color:black;
+    display:block;
+    z-index:1;
+}    
+
+.navigation-name:first-child:hover {
+    color:#fff9db;
+    cursor:pointer;
+}
+
+.short-text {
+    display:none;
+}
+
+.menu-icon {
+    width:30px;
+    cursor:pointer;
+    margin-left: 40px;
+    display:none;
+}    
+
+nav {
+    flex:1;
+    text-align: right;
+}
+
+nav > ul > li {
+    list-style: none;
+    display: inline-block;
+    margin:16px;
+    position: relative;
+}
+nav > ul > li > a {
+    text-decoration: none;
+    font-size:13px;
+    color:black;
+    transition: all .5s ease-out;
+}
+
+nav > ul > li > a:hover {
+    background-color:#fff9db;
+    color:#000;
+    padding:0.75rem;
+    width:100px;
+    box-shadow: 0 5px 30px 0 rgba(9,5,29,.171);
+}
+
+/*.fancy-underline {
+    background-image: linear-gradient(90deg,red,blue);
+    border-radius: 2px;
+    background-size: 0% 2px;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    transition: 200ms ease-in;
+}*/
+
+/*.fancy-underline:hover {
+    background-size:100% 2px;
+} */
+
+.row {
+    display:flex;
+    justify-content: space-around;
+    height:88%;
+    align-items:center;
+    /*border-style:dashed;*/
+    
+}
+
+.col {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    position: relative;
+}
+
+.text1 {
+    z-index: 1;
+    background-color: #fff;
+    font-size:3.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    animation: text 2s 1;
+    text-align: center;
+}
+
+.text2 {
+    font-size:1.5rem;
+    font-family: "Incosolata", Consolas, monospace;
+}
+
+.typewriter {
+    position:relative;
+    
+}
+
+
+.typewriter::after {
+    content:'|';
+    position:absolute;
+    right:0;
+    color:#000;
+    background-color:#fff;
+    width:100%;
+    animation:typing 2s steps(17) alternate infinite,
+                cursor .9s infinite;
+    animation-delay: 2.4s;
+}
+/*span.typewriter_wrapper {
+    position:relative;
+    font-size: 1.8rem;
+}
+
+span.typewriter_wrapper::before {
+    content:"Software Engineer";
+    position:relative;
+    animation: words 20s infinite, typing 20s steps(13) infinite;
+}
+
+span.typewriter_wrapper::after {
+    content:"";
+    position:absolute;
+    height:100%;
+}*/
+
+h1 {
+    color: black;
+    font-size:3.2rem;
+}
+
+h5 {
+    text-shadow: 0 0 5px purple;
+}
+
+p {
+    color:black;
+    font-size:11px;
+    line-height:15px;
+    white-space: pre-line;
+}
+
+.card p {
+    color:white;
+}
+
+button {
+    width: 180px;
+    color:whitesmoke;
+    font-size:12px;
+    padding:12px 0;
+    background: black;
+    border: 0;
+    border-radius: 20px;
+    outline:none;
+    margin-top: 30px;
+}
+
+.card {
+    width: 200px;
+    height:230px;
+    display:inline-block;
+    border-radius: 10px;
+    padding:15px;
+    box-sizing: border-box;
+    margin:10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: all .6s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card1{
+    background-image: url(../images/pic1.png);
+}
+.card2{
+    background-image: url(../images/pic1.png);
+}
+.card3{
+    background-image: url(../images/pic1.png);
+}
+.card4{
+    background-image: url(../images/pic1.png);
+}
+
+.introduction {
+    font-size:100px;
+}
+
+@media screen and (max-width: 762px){
+    
+    nav ul {
+        width:100%;
+        background:blueviolet;
+        position: absolute;
+        top: 75px;
+        right:0;
+        z-index: 2;
+    }
+
+    nav ul li {
+        /*border-style:dashed;
+        border-color: blue;*/
+
+        display:block;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+
+    nav ul li a {
+        /*border-style:solid;
+        border-color: green;*/
+    }
+
+    .menu-icon{
+        display:block;
+    }
+
+    #menuList {
+       overflow:hidden;
+       transition: 0.5s;
+       display: none;
+    }
+
+    .short-text {
+        font-size:3rem;
+        display:inline-block;
+    }
+
+    .full-text {
+        display:none;
+    }
+
+    .navbar {
+        display:flex;
+        justify-content: space-between;
+    }
+}
+
+@keyframes text {
+    0% {
+        color:white;
+        margin-bottom: -40px;
+    }
+
+    30% {
+        letter-spacing: 10px;
+        margin-bottom:-40px;
+    }
+
+    85% {
+        margin-bottom:-40px;
+    }
+}
+
+@keyframes typing {
+    to {
+        width:0%;
+    }
+}
+
+@keyframes cursor {
+
+    50%{
+        color:transparent;
+    }
+}
+
+/*@keyframes words {
+    0%,20% {
+        content: "Software Engineer";
+    }
+    21%,40% {
+        content: "Web developer";
+    }
+    41%,60% {
+        content: "Java";
+    }
+    61%,80% {
+        content: "realest";
+    }
+    81%,100% {
+        content: "bruh";
+    }
+}*/
